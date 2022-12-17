@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/top_relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/top_image_view"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="false"
+                android:background="@drawable/card"
+                android:paddingLeft="10dp"
+                android:paddingTop="25dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="30dp"
+                app:srcCompat="@drawable/rectangle" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/top_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="175dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:hint="メッセージを入力"
+                android:textColor="#FFFFFF"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/middle_relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/middle_image_view"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="false"
+                android:background="@drawable/card"
+                android:paddingLeft="10dp"
+                android:paddingTop="25dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="30dp"
+                app:srcCompat="@drawable/rectangle" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/middle_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="175dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:hint="メッセージを入力"
+                android:textColor="#FFFFFF"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom_relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/bottom_image_view"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="false"
+                android:background="@drawable/card"
+                android:paddingLeft="10dp"
+                android:paddingTop="25dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="30dp"
+                app:srcCompat="@drawable/rectangle" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/bottom_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="175dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:hint="メッセージを入力"
+                android:textColor="#FFFFFF"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/camera" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
